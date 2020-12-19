@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px 20px 0px 20px;
+    border-top: 1px solid slategrey;
+}
+
+#gallery {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+#gallery img {
+    height: 260px;
+    width: 400px;
+
+}
+
+#gallery li:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
